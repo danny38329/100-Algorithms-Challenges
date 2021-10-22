@@ -1,16 +1,17 @@
 const alternatingSums = (...weightPeople) => {
     let countTotal = 0;
     let weightTeam1 = 0;
-        let weightTeam2 = 0;
+    let weightTeam2 = 0;
     
-    for (let i = 0; i < weightPeople; i++){
+    for (let i = 0; i < weightPeople.length; i++){
         
         if (i % 2 === 0){
           weightTeam1 += weightPeople[i];
         } else {
           weightTeam2 += weightPeople[i];
         }
-        return weightTeam1, weightTeam2;
+        return weightTeam1;
+        
     }
    
 }
