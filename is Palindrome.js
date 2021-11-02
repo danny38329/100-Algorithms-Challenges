@@ -9,8 +9,17 @@ const isPalindrome = (word) => {
                 secondHalf += word[i];
             }
         }
+    } else {
+        for (let i = 0; i < word.length; i++) {
+            if (i <= word.length/2 + 1) {
+                firstHalf += word[i];
+            } else {
+                secondHalf += word[i];
+            }
     }
-    return firstHalf;
+    
+
+
 }
 
 console.log(isPalindrome("yess"));
