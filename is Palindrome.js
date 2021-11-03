@@ -10,16 +10,15 @@ const isPalindrome = (word) => {
             }
         }
     } else {
-        for (let i = 0; i < word.length; i++) {
-            if (i <= word.length/2 + 1) {
-                firstHalf += word[i];
+        for (let x = 0; x < word.length; x++) {
+            let middleNumber = (word.length -1) / 2; 
+            return middleNumber;
+            if (x < (word.length-1) /2) {
+                firstHalf += word[x];
             } else {
-                secondHalf += word[i];
-            }
-    }
-    
+                secondHalf += word[x];
+            };
+    } 
+}};
 
-
-}
-
-console.log(isPalindrome("yess"));
+console.log(isPalindrome("yeshi"));
