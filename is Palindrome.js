@@ -8,7 +8,8 @@ const isPalindrome = (word) => {
             } else {
                 secondHalf += word[i];
             }
-        }
+        }   
+            return firstHalf === secondHalf.split("").reverse().join("");;
     } else {
         for (let x = 0; x < word.length; x++) {
             let middleNumber = (word.length -1) / 2; 
@@ -21,4 +22,4 @@ const isPalindrome = (word) => {
     } 
 }};
 
-console.log(isPalindrome("yeshi"));
+console.log(isPalindrome("yess"));
