@@ -1,6 +1,7 @@
 const isPalindrome = (word) => {
     let firstHalf = "";
     let secondHalf = "";
+    let middleNumber = 0;
     if (word.length % 2 === 0) {
         for (let i = 0; i < word.length; i++) {
             if (i < word.length/2) {
@@ -12,14 +13,16 @@ const isPalindrome = (word) => {
             return firstHalf === secondHalf.split("").reverse().join("");;
     } else {
         for (let x = 0; x < word.length; x++) {
-            let middleNumber = (word.length -1) / 2; 
-            return middleNumber;
+             middleNumber = (word.length -1) / 2; 
+            
             if (x < (word.length-1) /2) {
                 firstHalf += word[x];
-            } else {
+            } else if (x === middleNumber) {
+                let middleLetter = word[x];
+            }
+            else {
                 secondHalf += word[x];
             };
-    } 
-}};
+    } return firstHalf === secondHalf.split("").reverse().join("");
+}  }
 
-console.log(isPalindrome("yess"));
